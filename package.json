@@ -11,6 +11,7 @@
   "dependencies": {
     "jszip": "^3.10.1",
     "next": "14.2.14",
+    "next.js": "^1.0.3",
     "react": "^18",
     "react-dom": "^18",
     "shadcn": "^2.1.0"
