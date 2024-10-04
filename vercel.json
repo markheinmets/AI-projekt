@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/saveZip": {
+      "maxDuration": 100,
+      "memory": 300,
+      "maxLambdaSize": "100mb"
+    }
+  }
+}
