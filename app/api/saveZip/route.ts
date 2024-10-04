@@ -16,6 +16,7 @@ export async function POST(req: Request) {
     const buffer = Buffer.from(zipBlob.split(',')[1], 'base64');
     const uniqueFileName = `generated_${Date.now()}_${uuidv4()}.zip`; // Generate a unique filename
     const zipFilePath = path.join(process.cwd(), 'public', uniqueFileName);
+    console.log({buffer, uniqueFileName, zipFilePath})
 
     // Save the ZIP file to the public folder
     await fs.promises.writeFile(zipFilePath, buffer);
