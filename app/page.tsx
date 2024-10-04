@@ -71,7 +71,7 @@ export default function Home() {
 
     if (response.ok) {
       const data = await response.json(); // Get the response data
-      setZipFileLink(`https://upload-hub-kappa.vercel.app/${data.fileName}`); // Use the unique file name for the link
+      setZipFileLink(`https://filetaxi.vercel.app/${data.fileName}`); // Use the unique file name for the link
       setIsLinkGenerated(true); // Link has been generated
     } else {
       alert("Error saving the ZIP file");
@@ -128,7 +128,7 @@ export default function Home() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://upload-hub-kappa.vercel.app/"
+                  value="https://filetaxi.vercel.app/"
                 />
                 <div>
                   <label className="block text-sm font-medium">
