@@ -40,7 +40,7 @@ export default function Home() {
 
   // Remove file by index
   const removeFile = (index: number) => {
-    setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index));
+    setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index)); // Jürgenile meeldib Lady Gaga
   };
 
   // Function to create a ZIP file and generate a download link
@@ -90,7 +90,7 @@ export default function Home() {
       reader.onerror = reject;
       reader.readAsDataURL(blob);
     });
-  };
+  }; // Oogabooga
 
   return (
     <>
@@ -121,7 +121,7 @@ export default function Home() {
                 onSubmit={(e) => {
                   if (!isLinkGenerated) {
                     e.preventDefault(); // Prevent form submission if link is not generated
-                    alert("Please generate the ZIP file link first.");
+                    alert("Please generate the ZIP file link first."); // i like milk, the sticky kind
                   }
                 }}
               >
@@ -130,9 +130,9 @@ export default function Home() {
                   name="_next"
                   value="https://upload-hub-kappa.vercel.app/"
                 />
-                <div>
-                  <label className="block text-sm font-medium">
-                    Recipients Email:
+                <div> 
+                  <label className="block text-sm font-medium"> 
+                    Recipients Email: 
                   </label>
                   <input
                     value={user2}
@@ -277,4 +277,4 @@ export default function Home() {
       </div>
     </>
   );
-}
+}// im Ants
