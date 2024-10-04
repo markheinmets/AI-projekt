@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 02.10
+## Meeskonnajõud: 
+* Jürgen-Mark Heinmets🚀, TA-23
+* Katrin Ansper🪇, TA-23
+* Robin Pruunlep✈️, TAK-22
+* Kevin Kangur🚁, TAK-22
+* Kätlin Epelbaum🛸, TAK-23
+* Silver Reinart💸, TAK-23
+* Oliver Põder🪂, TAK-23
+* Sander Armus🪚, TA-24
+* Sörel Haller🏍️, TA-24
+* Eleri Kupits💣, TA-24
 
-## Getting Started
+## Machine learning, kasutasime:
+* https://gamma.app
+* https://gemini.google.com/
+* https://chatgpt.com/
+* https://copilot.microsoft.com/
+* EKI kõnesüntesaator
+* Beautiful presentation: https://itmajakas.slack.com/archives/C07Q0TGA69Y/p1727864064949909
 
-First, run the development server:
+## Autoriõigused
+* Otsisime üldiselt infot.
+* Seejärel valisime võtmesõnaks luuletused.
+* Katsetasime erinevaid AI'sid.
+* https://docs.google.com/document/d/1fQe-IGGqdGgXPv9JnOhPaWmKDCUE8dnWT9rL3zFExNU/edit#heading=h.afbzpjvdb645
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 03.10
+## Projekt: Custom File Sharing Platform
+* Võtsime https://wetransfer.com/ eeskujuks
+* Lasime AI'l teha tegevuskava
+* Jagasime ülesanded
+* Valisime mida kasutame
+* Lasime AI'l äpi nime genereerida
+* Sellest lähtuvalt kujundasime logo
+* Lõime esialgse frontendi AI'ga
+* Sealt edasi kirjutasime backendi (next.js(react), javascript, node.js) (chatgpt: kuidas salvestada faile public folderisse, väikeste bug'ide lahendamisteks)
+* Seejärel täiendasime frontendi (html, css) [ChatGPT.docx](https://github.com/user-attachments/files/17254182/ChatGPT.docx)
+* Parandused
+* Lisasime Kommentaarid
+* Verceli link: https://filetaxi.vercel.app/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 04.10
+## Tagasiside
+### * Jürgen-Mark Heinmets🚀
+1. Mida tegin: aitasin grupi liikmeid, kui neil abi oli taris. kordineerisin tiimi tööd enam vähem 
+2. Mida õppisin: ai kasutamist, gitiga tööd, tiimiga töötamist. 
 
-## Learn More
+### * Katrin Ansper🪇
+1. Mida tegin: Kordinaator
+2. Mida õppisin: gamma.app, EKI kõnesüntesaator
 
-To learn more about Next.js, take a look at the following resources:
+### * Robin Pruunlep✈️
+1. Mida tegin: 
+2. Mida õppisin:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### * Kätlin Epelbaum🛸
+1. Mida tegin: Front-end kasutades Tailwind CSS-i
+2. Mida õppisin: Kuidas küsida ChatGPT-lt küsimusi paremini
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### * Silver Reinart💸
+1. Mida tegin: Nõuandja, assistent, testisin projekti, Vercel
+2. Mida õppisin: Typescript
 
-## Deploy on Vercel
+### * Oliver Põder🪂
+1. Mida tegin: Analüüsisin kuidas Blackbox Ai ise teeks seda projecti. Front-end Tailwind.
+2. Mida õppisin: Kuidas Ai paremini töötab ja tiimi töö.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### * Sander Armus🪚
+1. Mida tegin: Osalesin arutelus. Testisin programmi.
+2. Mida õppisin: Õppisin ja harjutasin githubi kasutama. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### * Sörel Haller🏍️
+1. Mida tegin: Front-end disain
+2. Mida õppisin: chatgpt.com, veebilehe loomine
+
+### * Eleri Kupits💣
+1. Mida tegin: genereerisin lehele logo
+2. Mida õppisin: githubi kasutamine, AI kasutamine, tiimisuhtlus
