@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     console.log(buffer)
     const uniqueFileName = `generated_${Date.now()}_${uuidv4()}.zip`; // Generate a unique filename
     console.log(uniqueFileName)
-    const zipFilePath = path.join('/', uniqueFileName);
+    const zipFilePath = path.join('/public/', uniqueFileName);
     console.log(process.cwd())
     console.log(zipFilePath)
 
