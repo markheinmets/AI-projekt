@@ -2,6 +2,7 @@
 
 import { useState, ChangeEvent, DragEvent } from "react";
 import JSZip from "jszip"; // Import JSZip
+import { PutBlobResult } from "@vercel/blob";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
   const [zipFileLink, setZipFileLink] = useState<string | null>(null); // State for ZIP file link
   const [isLinkGenerated, setIsLinkGenerated] = useState<boolean>(false); // State to track if link is generated
   const [isGenerating, setIsGenerating] = useState<boolean>(false); // State to track loading
+  const [blob, setBlob] = useState<PutBlobResult | null>(null); // Corrected the state declaration for blob
 
   // Handle files from input or drop
   const handleFiles = (newFiles: FileList) => {
@@ -71,6 +73,7 @@ export default function Home() {
 
     if (response.ok) {
       const data = await response.json(); // Get the response data
+      setBlob(data); // Set the blob state
       setZipFileLink(`https://filetaxi.vercel.app/${data.fileName}`); // Use the unique file name for the link
       setIsLinkGenerated(true); // Link has been generated
     } else {
@@ -105,7 +108,7 @@ export default function Home() {
             />
           </div>
           <p className="text-lg text-gray-200 mt-4">
-            If you dont know how to use mail we will do it for you
+            If you dont know how to use mail, we will do it for you
           </p>
         </header>
 
@@ -132,7 +135,7 @@ export default function Home() {
                 />
                 <div>
                   <label className="block text-sm font-medium">
-                    Recipients Email:
+                    Recipient's Email:
                   </label>
                   <input
                     value={user2}
