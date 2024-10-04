@@ -87,7 +87,7 @@ export default function Home() {
     <div className="container mx-auto p-8">
       <header className="text-center mb-12">
         <div className="justify-center flex">
-          <Image src="/Upload-Hub_tr.png" alt="Upload Hub Logo" className="bg-black rounded-xl" width={500} height={500}/>
+          <Image src="/logo.png" alt="Upload Hub Logo"   width={500} height={500}/>
         </div>   
         <p className="text-lg text-gray-200 mt-4">If you dont know how to use mail we will do it for you</p>
       </header>
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
               <div>
                 <label className="block text-sm font-medium">Message:</label>
-                <textarea id="message" name="message" className="mt-1 block w-full p-3 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Add any message or description..." required></textarea>
+                <textarea id="message" name="message" className="mt-1 block w-full p-3 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Add any message or description..."></textarea>
               </div>
               <div>
                 <label className="block text-sm font-medium">Generated link:</label>
@@ -144,7 +144,7 @@ export default function Home() {
                         alert("Link copied to clipboard!");
                       }
                     }}
-                    className="absolute right-0 top-0 bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-4 rounded-r-lg"
+                    className="absolute right-0 top-0 bg-yellow-200 hover:bg-yellow-300 text-black font-bold py-3 px-4 rounded-r-lg"
                   >
                     Copy
                   </button>
@@ -154,19 +154,19 @@ export default function Home() {
                     href={zipFileLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 block bg-orange-600 text-white text-center py-3 rounded-lg"
+                    className="mt-4 block bg-yellow-300 text-black text-center py-3 rounded-lg"
                   >
                     Download ZIP
                   </a>
                 )}
               </div>
-              <button onClick={generateZip} type="submit" className="mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 py-3 rounded-full text-lg font-semibold hover:from-orange-600 hover:to-yellow-600 transition-all duration-300">
+              <button onClick={generateZip} type="submit" className="mt-6 w-full bg-gradient-to-r from-yellow-300 to-yellow-500 py-3 rounded-full text-lg font-semibold hover:from-yellow-300 hover:to-yellow-500 text-black transition-all duration-300">
                 Upload & Generate Link
               </button>
             </form>
           </div>
           <div className="md:w-1/2 p-4 flex flex-col justify-center gap-4" onDrop={handleDrop} onDragOver={handleDragOver}>
-            <label id="drop-area"  className="flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-300 rounded-lg w-full h-80 text-center cursor-pointer hover:border-orange-400 transition">
+            <label id="drop-area"  className="flex flex-col items-center justify-center p-6 border-2 border-dashed border-gray-300 rounded-lg w-full h-80 text-center cursor-pointer hover:border-yellow-400 transition">
               <span className="text-sm font-medium" id="file-label">Drag & drop your file here or click to select</span>
               <input type="file" id="file" name="file" className="hidden" multiple onChange={handleInputChange} required />
             </label>
