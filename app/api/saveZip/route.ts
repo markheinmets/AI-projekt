@@ -14,9 +14,11 @@ export async function POST(req: Request) {
 
     // Decode the base64 string
     const buffer = Buffer.from(zipBlob.split(',')[1], 'base64');
+    console.log(buffer)
     const uniqueFileName = `generated_${Date.now()}_${uuidv4()}.zip`; // Generate a unique filename
+    console.log(uniqueFileName)
     const zipFilePath = path.join(process.cwd(), '/', uniqueFileName);
-    console.log({buffer, uniqueFileName, zipFilePath})
+    console.log(zipFilePath)
 
     // Save the ZIP file to the public folder
     await fs.promises.writeFile(zipFilePath, buffer);
