@@ -5,7 +5,7 @@ import JSZip from "jszip"; // Import JSZip
 import Image from "next/image";
 
 export default function Home() {
-  const [user1, setUser1] = useState<string>("");
+  const [user1, setUser1] = useState<string>(""); //emailid
   const [user2, setUser2] = useState<string>("");
   const [files, setFiles] = useState<File[]>([]);
   const [zipFileLink, setZipFileLink] = useState<string | null>(null); // State for ZIP file link
@@ -28,29 +28,29 @@ export default function Home() {
       handleFiles(event.dataTransfer.files);
     }
   };
-
+//something-something
   // Handle file selection via input
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
       handleFiles(event.target.files);
     }
   };
-
+//yeeees
   // Function to create a ZIP file and generate a download link
   const generateZip = async () => {
     if (files.length === 0) {
       alert("Please upload files first.");
       return;
     }
-
+//guess whos back
     const zip = new JSZip();
     files.forEach((file) => {
       zip.file(file.name, file); // Add each file to the ZIP
     });
-
+//back again
     const zipBlob = await zip.generateAsync({ type: "blob" }); // Generate the ZIP file
     const zipBlobBase64 = await blobToBase64(zipBlob); // Convert to base64
-
+//Ahmed The Dead Terrorist
     // Send the ZIP file to the API for saving
     // Inside the generateZip function
     const response = await fetch('/api/saveZip', {
